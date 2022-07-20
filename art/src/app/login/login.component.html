@@ -1,0 +1,34 @@
+<div class="container">
+    <h2 class="displa">Iniciar Sesión</h2>
+    <div class="row">
+        <div [formGroup]="form" class="col p-2 form-group">
+            <input type="text" formControlName="email" class="form-control" placeholder="Username">
+        </div>
+        <div *ngIf="Email?.errors && Email?.touched">
+            <p *ngIf="Email?.hasError('required')" class="text-danger">
+                Ingrese un Email Valido</p>
+            <p *ngIf="Email?.hasError('email')" class="text-danger">
+                El Usuario no es Valido
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col p-2 form-group">
+            <input type="password" formControlName="password" placeholder="Enter your Password" class="form-control">
+
+        </div>
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="text-danger">
+                Ingrese una contraseña valida</p>
+            <p *ngIf="Password?.errors minlength" class="text-danger">
+                la contraseña no es valida
+            </p>
+        </div>
+        <div class="row">
+            <div class="col p-2 form-group">
+                <input type="submit" class="btn btn-block btn-login" placeholder="Enter your Password">
+            </div>
+        </div>
+    </div>
+</div>

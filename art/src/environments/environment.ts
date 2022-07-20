@@ -3,6 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebase: {
+    apiKey: "AIzaSyBqZmEzyxleRG9ZuVzWD6lnFCQpyrMCPpY",
+    authDomain: "ladytoxic4-4dbac.firebaseapp.com",
+    databaseURL: "https://ladytoxic4-4dbac-default-rtdb.firebaseio.com",
+    projectId: "ladytoxic4-4dbac",
+    storageBucket: "ladytoxic4-4dbac.appspot.com",
+    messagingSenderId: "733557880845",
+    appId: "1:733557880845:web:e80159e13de9702675fd44",
+    measurementId: "G-LT451BH1DE"
+  },
   production: false
 };
 
