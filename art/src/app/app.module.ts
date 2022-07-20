@@ -27,7 +27,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth (() => getAuth()),
     
   ],
